@@ -53,7 +53,7 @@ const FAQ = () => {
 	}
 
 	return (
-		<div className="w-full max-w-4xl mx-auto bg-white/40 backdrop-blur-xl border border-white/20 p-10 rounded-[24px]">
+		<div className="w-full max-w-4xl mx-auto p-10">
 			<div className="space-y-4">
 				{faqData.map((item, index) => (
 					<div key={item.id} className="border-b-[1px] border-gray-700">
