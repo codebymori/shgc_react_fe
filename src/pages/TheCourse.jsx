@@ -41,7 +41,7 @@ const TheCourse = () => {
           {/* Description */}
           <p className="font-inter font-light leading-loose mb-8">
             Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's
+            industry.
           </p>
 
           {/* Button */}
