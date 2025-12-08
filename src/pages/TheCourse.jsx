@@ -1,4 +1,3 @@
-import Navbar from "../components/Navbar";
 import Button from "../components/Button";
 import CourseCarousel from "../components/CourseCarousel";
 import GolfCourseAesthetic from "../components/GolfCourseAesthetic";
@@ -9,12 +8,14 @@ const TheCourse = () => {
   
   return (
     <div className="w-full min-h-screen flex flex-col bg-white">
-      {/* Navbar */}
-      <Navbar />
+
+      <div className="w-full min-h-screen flex flex-col bg-white p-10">
+
+     
 
       {/* Hero Section with Image */}
-      <div className="flex justify-center pt-24">
-        <div className="w-[95vw]">
+      <div className="flex justify-center">
+        <div className="w-full">
           <img
             src={hole1}
             alt="The Course - Golf Course Hole 1"
@@ -60,7 +61,7 @@ const TheCourse = () => {
       </div>
 
       {/* Carousel Section */}
-      <div className="w-full flex justify-center mt-15 px-4">
+      <div className="w-full flex justify-center mt-15 ">
         <div className="w-[95vw]">
           <CourseCarousel />
         </div>
@@ -112,7 +113,9 @@ const TheCourse = () => {
         </div>
       </div>
 
-      {/* Golf Course Aesthetic Section */}
+      
+       </div>
+       {/* Golf Course Aesthetic Section */}
       <GolfCourseAesthetic />
     </div>
   );

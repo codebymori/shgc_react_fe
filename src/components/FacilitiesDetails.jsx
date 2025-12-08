@@ -62,13 +62,12 @@ const FacilitiesDetails = ({
   };
 
   return (
-    <div className="w-full min-h-screen flex flex-col bg-white">
-      {/* Navbar */}
-      <Navbar />
+    <>
+    <div className="w-full min-h-screen flex flex-col bg-white p-10">
 
       {/* Hero Section with Image */}
-      <div className="flex justify-center pt-24">
-        <div className="w-[95vw]">
+      <div className="flex justify-center">
+        <div className="w-full">
           <img
             src={heroImage}
             alt={title}
@@ -85,9 +84,9 @@ const FacilitiesDetails = ({
       </div>
 
       {/* Main Content Section */}
-      <div className="w-full flex justify-center mt-40 px-4 pb-20">
+      <div className="w-full flex justify-center mt-40 pb-20">
         <div 
-          className="w-[95vw] h-[90vh] rounded-[24px] p-16 relative"
+          className=" w-full rounded-[24px] p-16 relative"
           style={{ backgroundColor }}
         >
           
@@ -128,7 +127,7 @@ const FacilitiesDetails = ({
               <h2 className="text-[70px] font-optima text-black -mb-[130px] self-end">Our Gallery</h2>
               
               {/* Gallery Carousel Container */}
-              <div className="relative w-[60vw] h-[550px] overflow-hidden left-[100px]">
+              <div className="relative w-[60vw] h-[550px] overflow-hidden left-[105px]">
                 {/* Cards Slider */}
                 <div className="absolute left-0 bottom-0 h-full flex items-end overflow-hidden">
                   <motion.div
@@ -185,24 +184,25 @@ const FacilitiesDetails = ({
           </div>
         </div>
       </div>
-
-      {/* Explore More Section */}
-      <div className="w-full flex justify-center px-4 py-16 relative overflow-hidden"
-        style={{
-          minHeight: "80vh",
-          backgroundImage: `url(${aksenfooter})`,
-          backgroundSize: "160% auto",
-          backgroundPosition: "center -110%",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
-        <div className="w-[95vw] p-0 relative z-10 mt-15">
-          <h2 className="text-[70px] font-optima text-black mb-6">Explore More</h2>
-          <NewsCards count={6} customData={exploreData} />
-        </div>
-      </div>
       
     </div>
+
+    {/* Explore More Section - Outside parent container for full width */}
+    <div className="w-full py-16 relative overflow-hidden"
+      style={{
+        minHeight: "80vh",
+        backgroundImage: `url(${aksenfooter})`,
+        backgroundSize: "160% auto",
+        backgroundPosition: "center -110%",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+      <div className="w-full relative z-10">
+        <h2 className="text-[70px] font-optima text-black mb-6 px-16">Explore More</h2>
+        <NewsCards count={6} customData={exploreData} />
+      </div>
+    </div>
+    </>
   );
 };
 

@@ -1,4 +1,3 @@
-import Navbar from "../components/Navbar";
 import eagle1 from "../assets/img/eagle1.webp";
 import highlanders2 from "../assets/img/highlanders2.webp";
 import alba2 from "../assets/img/alba2.webp";
@@ -9,13 +8,11 @@ import islay1 from "../assets/img/islay1.webp";
 const Facilities = () => {
   
   return (
-    <div className="w-full min-h-screen flex flex-col bg-white">
-      {/* Navbar */}
-      <Navbar />
+    <div className="w-full min-h-screen flex flex-col bg-white p-10">
 
       {/* Hero Section with Image */}
-      <div className="flex justify-center pt-24">
-        <div className="w-[95vw]">
+      <div className="flex justify-center">
+        <div className="w-full">
           <img
             src={eagle1}
             alt="Facilities"
@@ -33,8 +30,8 @@ const Facilities = () => {
 
 
       {/* Golf Course Facilities Section */}
-      <div className="w-full flex justify-center mt-20 px-4">
-        <div className="w-[95vw] py-16">
+      <div className="w-full flex justify-center mt-20 ">
+        <div className="w-full py-16">
           <div className="flex gap-20 items-end justify-between">
             {/* Left Side - Text Content */}
             <div className="flex-1 flex flex-col gap-[60px]">
@@ -70,8 +67,8 @@ const Facilities = () => {
       </div>
 
       {/* More Facilities Section */}
-      <div className="w-full flex justify-center mt-32 px-4 pb-20">
-        <div className="w-[95vw]">
+      <div className="w-full flex justify-center mt-32 pb-20">
+        <div className="w-full">
           <div className="-mb-[100px] text-center">
             <h2 className="text-[70px] font-optima text-black">More Facilities</h2>
           </div>
