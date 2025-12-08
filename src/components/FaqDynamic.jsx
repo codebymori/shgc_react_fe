@@ -1,43 +1,16 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { FiArrowRight } from 'react-icons/fi'
 import '../styles/accordion.css'
 
-const FAQ = () => {
+const FaqDynamic = ({ faqData = [] }) => {
 	const [activeIndex, setActiveIndex] = useState(null)
 	const [closingIndex, setClosingIndex] = useState(null)
 
-	const faqData = [
-		{
-			id: 1,
-			question: 'Question 1',
-			answer: 'This is the answer to question 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-		},
-		{
-			id: 2,
-			question: 'Question 2',
-			answer: 'This is the answer to question 2. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-		},
-		{
-			id: 3,
-			question: 'Question 3',
-			answer: 'This is the answer to question 3. Ut enim ad minim veniam, quis nostrud exercitation ullamco.'
-		},
-		{
-			id: 4,
-			question: 'Question 4',
-			answer: 'This is the answer to question 4. Duis aute irure dolor in reprehenderit in voluptate velit esse.'
-		},
-		{
-			id: 5,
-			question: 'Question 5',
-			answer: 'This is the answer to question 5. Excepteur sint occaecat cupidatat non proident, sunt in culpa.'
-		},
-		{
-			id: 6,
-			question: 'Question 6',
-			answer: 'This is the answer to question 6. Qui officia deserunt mollit anim id est laborum sed ut perspiciatis.'
-		}
-	]
+	// Reset accordion state when faqData changes (category changes)
+	useEffect(() => {
+		setActiveIndex(null)
+		setClosingIndex(null)
+	}, [faqData])
 
 	const toggleAccordion = (index) => {
 		if (activeIndex === index) {
@@ -53,7 +26,7 @@ const FAQ = () => {
 	}
 
 	return (
-		<div className="w-full max-w-4xl mx-auto bg-white/40 backdrop-blur-xl border border-white/20 p-10 rounded-[24px]">
+		<div className="w-full max-w-4xl mx-auto p-10">
 			<div className="space-y-4">
 				{faqData.map((item, index) => (
 					<div key={item.id} className="border-b-[1px] border-gray-700">
@@ -82,4 +55,4 @@ const FAQ = () => {
 	)
 }
 
-export default FAQ
+export default FaqDynamic

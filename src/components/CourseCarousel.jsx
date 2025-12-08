@@ -306,7 +306,7 @@ export default function CourseCarousel() {
         <div className="absolute right-10 bottom-10 h-full w-1/2 flex items-end gap-6 overflow-hidden perspective">
           <motion.div
             className="flex gap-1"
-            animate={{ x: -index * 350 }}
+            animate={{ x: -index * 353 }}
             transition={{
               duration: 0.7,
               ease: [0.22, 1, 0.36, 1],

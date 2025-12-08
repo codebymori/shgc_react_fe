@@ -1,9 +1,126 @@
+import React, { useState } from 'react';
 import Navbar from "../components/Navbar";
 import Button from "../components/Button";
-import FAQ from "../components/faq";
+import FaqDynamic from "../components/FaqDynamic";
 import msp5 from "../assets/img/msp5.webp";
 
 const Faq = () => {
+  const [activeCategory, setActiveCategory] = useState('General');
+
+  // FAQ data berdasarkan kategori
+  const faqCategories = {
+    'General': {
+      title: 'General Question',
+      description: 'Common questions about Sentul Highlands Golf Club facilities and services',
+      faqs: [
+        {
+          id: 1,
+          question: 'What are the operating hours of the golf course?',
+          answer: 'The golf course is open daily from 6:00 AM to 6:00 PM. Last tee time is at 4:30 PM to ensure all players can complete their round before closing.'
+        },
+        {
+          id: 2,
+          question: 'Do you provide golf equipment rental?',
+          answer: 'Yes, we offer a complete set of golf equipment rental including clubs, golf carts, and accessories. Please contact our pro shop for availability and pricing.'
+        },
+        {
+          id: 3,
+          question: 'Are lessons available for beginners?',
+          answer: 'We offer professional golf lessons for all skill levels, including beginners. Our certified PGA instructors provide both individual and group lessons.'
+        }
+      ]
+    },
+    'Book Tee Time': {
+      title: 'Book Tee Time',
+      description: 'Everything you need to know about booking your tee time',
+      faqs: [
+        {
+          id: 4,
+          question: 'How far in advance can I book a tee time?',
+          answer: 'Members can book tee times up to 14 days in advance, while guests can book up to 7 days in advance through our online booking system.'
+        },
+        {
+          id: 5,
+          question: 'Can I cancel or reschedule my tee time?',
+          answer: 'Yes, you can cancel or reschedule your tee time up to 24 hours before your scheduled time without any penalty. Cancellations within 24 hours may be subject to fees.'
+        },
+        {
+          id: 6,
+          question: 'What is the minimum group size for booking?',
+          answer: 'You can book for a minimum of 1 player up to a maximum of 4 players per tee time. Groups larger than 4 will need to book multiple consecutive tee times.'
+        }
+      ]
+    },
+    'Membership': {
+      title: 'Membership',
+      description: 'Information about golf club membership options and benefits',
+      faqs: [
+        {
+          id: 7,
+          question: 'What types of membership are available?',
+          answer: 'We offer Individual, Family, and Corporate membership options. Each membership type includes different benefits and privileges at the club.'
+        },
+        {
+          id: 8,
+          question: 'What are the membership benefits?',
+          answer: 'Members enjoy priority booking, discounted green fees, access to exclusive events, complimentary use of practice facilities, and dining privileges at our clubhouse.'
+        },
+        {
+          id: 9,
+          question: 'How do I apply for membership?',
+          answer: 'You can apply for membership by visiting our clubhouse, calling our membership department, or filling out the online application form on our website.'
+        }
+      ]
+    },
+    'Payment': {
+      title: 'Payment',
+      description: 'Payment methods, policies, and billing information',
+      faqs: [
+        {
+          id: 10,
+          question: 'What payment methods do you accept?',
+          answer: 'We accept cash, credit cards (Visa, MasterCard, AMEX), debit cards, and bank transfers. Members can also charge to their membership account.'
+        },
+        {
+          id: 11,
+          question: 'Is there a deposit required for bookings?',
+          answer: 'A deposit may be required for large group bookings or special events. Regular tee time bookings typically do not require a deposit for members.'
+        },
+        {
+          id: 12,
+          question: 'What is your refund policy?',
+          answer: 'Refunds are available for cancellations made 24 hours in advance. Weather-related cancellations are handled on a case-by-case basis with full refunds or credits offered.'
+        }
+      ]
+    },
+    'Other': {
+      title: 'Other Questions',
+      description: 'Additional questions and miscellaneous information',
+      faqs: [
+        {
+          id: 13,
+          question: 'Do you host tournaments and events?',
+          answer: 'Yes, we regularly host tournaments, corporate events, and private functions. Please contact our events coordinator for more information and booking.'
+        },
+        {
+          id: 14,
+          question: 'Is there a dress code for the golf course?',
+          answer: 'Yes, we maintain a smart casual dress code. Collared shirts, appropriate golf attire, and golf shoes are required on the course. Tank tops and denim are not permitted.'
+        },
+        {
+          id: 15,
+          question: 'Do you provide caddy services?',
+          answer: 'Professional caddy services are available upon request. We recommend booking caddy services in advance, especially during peak hours and weekends.'
+        }
+      ]
+    }
+  };
+
+  const handleCategoryClick = (category) => {
+    setActiveCategory(category);
+  };
+
+  const currentCategoryData = faqCategories[activeCategory];
   
   return (
     <div className="w-full min-h-screen flex flex-col bg-white">
@@ -68,21 +185,19 @@ const Faq = () => {
               
               {/* Category Menu */}
               <div className="space-y-4 mb-8">
-                <button className="block w-full text-left py-2 text-[15px] font-inter text-black font-bold">
-                  General
-                </button>
-                <button className="block w-full text-left py-2 text-[15px] font-inter text-gray-600 hover:text-black">
-                  Book Tee Time
-                </button>
-                <button className="block w-full text-left py-2 text-[15px] font-inter text-gray-600 hover:text-black">
-                  Membership
-                </button>
-                <button className="block w-full text-left py-2 text-[15px] font-inter text-gray-600 hover:text-black">
-                  Payment
-                </button>
-                <button className="block w-full text-left py-2 text-[15px] font-inter text-gray-600 hover:text-black">
-                  Other
-                </button>
+                {Object.keys(faqCategories).map((category) => (
+                  <button 
+                    key={category}
+                    onClick={() => handleCategoryClick(category)}
+                    className={`block w-full text-left py-2 text-[15px] font-inter transition-colors ${
+                      activeCategory === category 
+                        ? 'text-black font-bold' 
+                        : 'text-gray-600 hover:text-black'
+                    }`}
+                  >
+                    {category}
+                  </button>
+                ))}
               </div>
 
               {/* Contact Section */}
@@ -111,14 +226,14 @@ const Faq = () => {
           {/* Right Side - FAQ Accordion */}
           <div className="flex-[2] bg-[#F5F5F5]/30 rounded-[24px] pb-10">
             <div className="mb-6 mt-8 pl-20">
-              <h2 className="text-[30px] font-optima text-black mb-2"># General Question</h2>
+              <h2 className="text-[30px] font-optima text-black mb-2"># {currentCategoryData.title}</h2>
               <p className="text-[15px] font-inter leading-loose text-gray-600">
-                Lorem Ipsum is simply dummy text of the printing <br></br> and typesetting industry. Lorem Ipsum has been the industry's
+                {currentCategoryData.description}
               </p>
             </div>
             
-            {/* FAQ Component */}
-            <FAQ />
+            {/* FAQ Dynamic Component */}
+            <FaqDynamic faqData={currentCategoryData.faqs} />
           </div>
 
         </div>
