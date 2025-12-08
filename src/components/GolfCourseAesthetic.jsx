@@ -160,7 +160,7 @@ export default function GolfCourseAesthetic() {
 
                 // Set ukuran card yang konsisten
                 let cardWidth = "w-[430px]";
-                let cardHeight = isActive ? "h-[70vh]" : "h-[50vh]";
+                let cardHeight = isActive ? "h-[70vh]" : "h-[55vh]";
 
                 return (
                   <CourseCard

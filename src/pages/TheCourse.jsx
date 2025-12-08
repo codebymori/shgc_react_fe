@@ -24,8 +24,8 @@ const TheCourse = () => {
       </div>
 
       {/* White Card with Title - Positioned to overlap hero */}
-      <div className="w-full flex justify-center -mt-16 relative z-10 px-4">
-        <div className="bg-white rounded-[50px] w-[30vw] max-w-3xl p-2 text-center">
+      <div className="w-full flex justify-center -mt-10 relative z-10 px-4">
+        <div className="bg-white rounded-[50px] w-[30vw] max-w-3xl p-0 text-center">
           <h1 className="text-[70px] font-optima text-black mb-2">The Course</h1>
           
           {/* Divider */}
@@ -45,11 +45,17 @@ const TheCourse = () => {
           </p>
 
           {/* Button */}
-          <Button
-            label="Inquire NOW"
-            onClick={() => console.log("Inquire clicked")}
-            className="bg-green-900 hover:bg-green-800 text-white px-8 py-3 rounded-full font-medium transition"
-          />
+          <div className="flex justify-center">
+            <Button
+              label="Inquire Now"
+              onClick={() => console.log("Inquire clicked")}
+              bgClass="bg-[#24452D]"
+              textClass="text-white"
+              roundedClass="rounded-full"
+              iconClass="text-white"
+              secondWordClass="font-semibold"
+            />
+          </div>
         </div>
       </div>
 

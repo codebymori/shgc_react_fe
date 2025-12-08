@@ -1,4 +1,6 @@
 
+import React from 'react';
+import Navbar from '../components/Navbar';
 import heroVideo from '../assets/video/hero-video-dummy.mp4'
 import Button from '../components/Button';
 import ballImg from '../assets/img/ball.png'
@@ -15,9 +17,13 @@ import FAQ from '../components/faq';
 const Home = () => {
 
   return (
-    <div className="p-10 bg-white">
+    <div className="w-full min-h-screen flex flex-col bg-white">
+      {/* Navbar */}
+      <Navbar />
+      
+      <div className="p-10 bg-white">
     
-    {/* Hero */}
+        {/* Hero */}
 
       <div className="relative h-[80vh] rounded-[24px] text-white flex justify-end items-center overflow-hidden">
         <video 
@@ -252,6 +258,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

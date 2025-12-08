@@ -28,10 +28,10 @@ const NewsCard = ({ item, buttonProps = {} }) => {
 	)
 }
 
-// Wrapper component: shows latest N cards (default 3) from dummy data
-const NewsCards = ({ count = 3 }) => {
-	// dummy data (6 items)
-	const data = [
+// Wrapper component: shows latest N cards (default 3) from dummy data or custom data
+const NewsCards = ({ count = 3, customData = null }) => {
+	// dummy data (6 items) - used when customData is not provided
+	const defaultData = [
 		{
 			id: 1,
 			date: '02 June 2025',
@@ -81,6 +81,9 @@ const NewsCards = ({ count = 3 }) => {
 			createdAt: '2025-04-10',
 		},
 	]
+
+	// Use custom data if provided, otherwise use default data
+	const data = customData || defaultData;
 
 	// sort by createdAt desc and take `count` items
 	const sorted = data
