@@ -1,4 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import Home from "./Pages/Home";
 import TheCourse from "./Pages/TheCourse";
 import Facilities from "./Pages/Facilities";
@@ -8,6 +10,7 @@ import Faq from "./Pages/Faq";
 function App() {
   return (
     <Router>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/the-course" element={<TheCourse />} />
@@ -15,6 +18,7 @@ function App() {
         <Route path="/fraser-driving-lounge" element={<FraserDrivingLounge />} />
         <Route path="/faq" element={<Faq />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }
