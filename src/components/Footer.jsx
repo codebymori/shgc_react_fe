@@ -5,7 +5,7 @@ import Button from "./Button";
 const Footer = () => {
   return (
     <footer className="bg-[#24452D] text-white">
-      <div className="max-w-[90%] mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div className="max-w-[90%] mx-auto px-4 sm:px-6 lg:px-8 py-10">
         {/* Desktop Layout (md and above) */}
         <div className="hidden md:grid md:grid-cols-4 md:gap-8 lg:gap-12">
           {/* Logo and Description */}
@@ -112,29 +112,6 @@ const Footer = () => {
               iconClass="text-[#24452D]"
               secondWordClass='font-optima font-medium'
               onClick={() => console.log('clicked')}/>
-            <div className="space-y-4 pt-8">
-               <div className="w-[30%] h-[1px] bg-[#A4781A]"></div>
-              <div className="space-y-3 pt-4">
-                <input 
-                  type="email" 
-                  placeholder="Email .." 
-                  className="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg bg-white text-[#24452D] placeholder-gray-400 border border-gray-600 focus:border-[#A4781A] focus:outline-none transition-colors duration-300 font-inter text-sm sm:text-base"
-                />
-                <textarea 
-                  placeholder="Messages .." 
-                  rows={4}
-                  className="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg bg-white text-[#24452D] placeholder-gray-400 border border-gray-600 focus:border-[#A4781A] focus:outline-none resize-none transition-colors duration-300 font-inter text-sm sm:text-base"
-                ></textarea>
-                <Button 
-                  label="Send"
-                  bgClass="bg-white"
-                  textClass="text-[#24452D] font-inter font-medium text-sm sm:text-base"
-                  roundedClass="rounded-full"
-                  className="px-4 sm:px-6 py-2 sm:py-3 transition-colors duration-300 justify-center"
-                  onClick={() => console.log('Send clicked')}
-                />
-              </div>
-            </div>
           </div>
         </div>
 
@@ -232,34 +209,13 @@ const Footer = () => {
           <div>
             <h3 className="text-white font-optima text-base sm:text-lg mb-4 text-center">Get membership for better experience</h3>
             <div className="space-y-4 flex flex-col items-center">
-               <Button 
-              label="Membership"
-              bgClass="bg-[#E4E9D4]"
-              textClass="text-[#24452D]"
-              iconClass="text-[#24452D]"
-              secondWordClass='font-optima font-medium'
-              onClick={() => console.log('clicked')}/>
-               <div className="w-[30%] h-[1px] bg-[#A4781A]"></div>
-              <div className="space-y-3 flex flex-col items-center pt-4 w-full">
-                <input 
-                  type="email" 
-                  placeholder="Email .." 
-                  className="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg bg-white text-gray-700 placeholder-gray-400 border border-gray-600 focus:border-[#A4781A] focus:outline-none transition-colors duration-300 font-inter text-sm sm:text-base"
-                />
-                <textarea 
-                  placeholder="Messages .." 
-                  rows={3}
-                  className="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg bg-white text-gray-700 placeholder-gray-400 border border-gray-600 focus:border-[#A4781A] focus:outline-none resize-none transition-colors duration-300 font-inter text-sm sm:text-base"
-                ></textarea>
                 <Button 
-                  label="Send"
-                  bgClass="bg-white"
-                  textClass="text-[#24452D] font-inter font-medium text-sm sm:text-base"
-                  roundedClass="rounded-full"
-                  className="px-4 sm:px-6 py-2 sm:py-3 transition-colors duration-300 justify-center"
-                  onClick={() => console.log('Send clicked')}
-                />
-              </div>
+                label="Membership"
+                bgClass="bg-[#E4E9D4]"
+                textClass="text-[#24452D]"
+                iconClass="text-[#24452D]"
+                secondWordClass='font-optima font-medium'
+                onClick={() => console.log('clicked')}/>
             </div>
           </div>
         </div>

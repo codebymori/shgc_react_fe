@@ -6,6 +6,10 @@ import TheCourse from "./Pages/TheCourse";
 import Facilities from "./Pages/Facilities";
 import FraserDrivingLounge from "./Pages/FraserDrivining&Lounge";
 import Faq from "./Pages/Faq";
+import Membership from "./Pages/Membership";
+import NewsEvent from "./Pages/News&Event";
+import ArticleDetail from "./Pages/ArticleDetail";
+import BookTeeTime from "./Pages/BookTeeTime";
 
 function App() {
   return (
@@ -17,6 +21,10 @@ function App() {
         <Route path="/facilities" element={<Facilities />} />
         <Route path="/fraser-driving-lounge" element={<FraserDrivingLounge />} />
         <Route path="/faq" element={<Faq />} />
+        <Route path="/membership"  element={<Membership />} />
+        <Route path="/book-tee-time" element={<BookTeeTime />} />
+        <Route path="/news-event" element={<NewsEvent />} />
+        <Route path="/news-event/:id" element={<ArticleDetail />} />
       </Routes>
       <Footer />
     </Router>
