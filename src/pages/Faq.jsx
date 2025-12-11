@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Navbar from "../components/Navbar";
 import Button from "../components/Button";
 import FaqDynamic from "../components/FaqDynamic";
 import msp5 from "../assets/img/msp5.webp";
@@ -123,13 +122,12 @@ const Faq = () => {
   const currentCategoryData = faqCategories[activeCategory];
   
   return (
-    <div className="w-full min-h-screen flex flex-col bg-white">
-      {/* Navbar */}
-      <Navbar />
+    <div className="w-full min-h-screen flex flex-col bg-white p-10">
+     
 
       {/* Hero Section with Image */}
-      <div className="flex justify-center pt-24">
-        <div className="w-[95vw]">
+      <div className="flex justify-center">
+        <div className="w-full">
           <img
             src={msp5}
             alt="FAQ - Frequently Asked Questions"
@@ -175,8 +173,8 @@ const Faq = () => {
       </div>
 
       {/* FAQ Content Section */}
-      <div className="w-full flex justify-center px-4 pb-20 mt-20">
-        <div className="w-[95vw] flex gap-16">
+      <div className="w-full flex justify-center pb-20 mt-20">
+        <div className="w-full flex gap-16">
           
           {/* Left Side - Categories */}
           <div className="flex-1 max-w-sm">
