@@ -86,8 +86,8 @@ const FacilitiesDetails = ({
       {/* Main Content Section */}
       <div className="w-full flex justify-center mt-40 pb-20">
         <div 
-          className=" w-full rounded-[24px] p-16 relative"
-          style={{ backgroundColor }}
+          className="w-full rounded-[24px] p-16 relative"
+          style={{ backgroundColor: 'transparent' }}
         >
           
           {/* Check Availability Button */}

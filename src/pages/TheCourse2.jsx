@@ -1,4 +1,5 @@
 import Button from "../components/Button";
+import CourseCarousel from "../components/CourseCarousel";
 import GolfCourseAesthetic from "../components/GolfCourseAesthetic";
 import { useState, useEffect, useRef } from "react";
 import hole1 from "../assets/img/hole1.webp";
@@ -6,6 +7,7 @@ import hole2 from "../assets/img/hole2.webp";
 import hole3 from "../assets/img/hole3.webp";
 import hole8 from "../assets/img/hole8.webp";
 import hole12 from "../assets/img/hole12.webp";
+import golfMapImg from "../assets/img/maps.png";
 
 // Course Timeline Component
 const CourseTimeline = () => {
@@ -256,7 +258,7 @@ const CourseTimeline = () => {
               <h3 className="text-xl font-optima font-semibold text-white mb-6 text-center">
                 Course Navigation
               </h3>
-              <div className="space-y-4 max-h-96 overflow-y-auto overflow-x-hidden custom-scrollbar">
+              <div className="space-y-4 max-h-96 overflow-y-auto custom-scrollbar">
                 {holes.map((hole, index) => (
                   <div
                     key={hole.id}
@@ -388,7 +390,7 @@ const TheCourse = () => {
     <div className="w-full min-h-screen flex flex-col bg-white overflow-x-hidden">
     <div className="w-full min-h-screen flex flex-col bg-white">
 
-      <div className="w-full min-h-screen flex flex-col bg-white p-10 relative z-20 rounded-b-[24px]">
+      <div className="w-full min-h-screen flex flex-col bg-white p-10 relative z-20">
 
      
 
@@ -420,7 +422,8 @@ const TheCourse = () => {
         <div className="w-[35vw] text-center pb-16">
           {/* Description */}
           <p className="font-inter font-light leading-loose mb-8">
-            Experience the perfect blend of challenge and beauty at our championship golf course.
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
           </p>
 
           {/* Button */}
@@ -438,93 +441,62 @@ const TheCourse = () => {
         </div>
       </div>
 
-      {/* Bringing Golfers Together Section */}
-      <div className="w-full flex justify-center mt-20 mb-10 px-4">
-        <div className="w-[95vw] max-w-7xl">
-          <div className="flex items-center justify-between gap-16">
-            {/* Left Side - Content */}
-            <div className="flex-1 max-w-2xl">
-              <h2 className="text-[48px] font-optima text-[#24452D] leading-tight mb-8">
-                Bringing golfers together
-              </h2>
-              <p className="text-[16px] font-inter font-light leading-relaxed text-gray-700">
-                Where every swing finds its perfect moment.  Set amidst the lush hills of Sentul, The Course offers a playing experience that blends challenge, serenity, and breathtaking scenery. Each hole is crafted with its own character inviting golfers to think strategically, embrace the journey, and enjoy a world-class standard of play.
-                Discover a course designed not only to be played, but truly experienced.
-              </p>
+      {/* Carousel Section */}
+      <div className="w-full flex justify-center mt-15 ">
+        <div className="w-[95vw]">
+          <CourseCarousel />
+        </div>
+      </div>
+
+      {/* Golf Course Section */}
+      <div className="w-full flex justify-center mt-32">
+        <div className="w-[95vw] bg-[#E4E9D4] rounded-3xl p-12 relative">
+          {/* Title - "Golf Course" - Top Right with overlap */}
+          <div className="flex justify-end mr-20 -mt-[100px] mb-8">
+            <h2 className="text-[70px] font-optima text-[#24452D] bg-white rounded-[50px] px-12 py-1">Golf Course</h2>
+          </div>
+
+          <div className="flex gap-20 items-center">
+            {/* Left Side - Text Card */}
+            <div className="flex-1 flex flex-col gap-6">
+              {/* Text Card */}
+              <div className="bg-white rounded-[24px] p-8 min-h-[300px] flex flex-col justify-between">
+                <p className="text-[15px] leading-relaxed font-inter font-light">
+                    GOLF COURSE <br></br>
+                    Many well-known golf courses around the world are using the Sub-Air System, including the Augusta National and the Wentworth Golf Club.
+                    <br></br><br></br>
+                    SIGNATURE HOLE OF ROBINSWOOD GOLF CLUB
+                    <br></br>
+                    5th Hole Par 4 473 Yards
+                    <br></br>
+                    This hole plays easier than it might look. There is a wide landing area for short hitters.
+                    <br></br><br></br>
+                    A stream cuts across the fairway and a beauty is yet to come. After you walk pass the second shot, you will certainly hear the noise of a big waterfall, one of the iconic signatures at Robinswood Golf Club and also a picture spot.
+                    <br></br><br></br>
+                    12th Hole Par 3 204 Yards<br></br>
+                    This stunning Par 3 signature hole is perhaps one of the most exciting holes at Robinswood. The apple-shaped island green sits in the middle of the water. Don't let the yardage fool you in this hole. Choosing the right club is extremely significance, as this is one of the highest and windiest sections of the entire course. Be daring and commit to your tee shot.
+                                    </p>
+              </div>
             </div>
 
-            {/* Right Side - Social Cards */}
+            {/* Right Side - Golf Course Map */}
             <div className="flex-1 relative">
-              <div className="relative w-full h-[400px]">
-                {/* Card 1 - Main card */}
-                <div className="absolute top-0 left-8 w-72 h-56 bg-gradient-to-br from-blue-400 to-blue-600 rounded-3xl overflow-hidden shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-300">
-                  <div className="relative w-full h-full">
-                    <img
-                      src={hole2}
-                      alt="Golf Community"
-                      className="w-full h-full object-cover"
-                    />
-                    <div className="absolute inset-0 bg-black/20"></div>
-                    <div className="absolute bottom-4 left-4 right-4">
-                      <div className="flex items-center justify-between">
-                        <div className="flex items-center space-x-2 bg-black/30 backdrop-blur-sm rounded-full px-3 py-1">
-                          <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center">
-                            <span className="text-black text-sm font-bold">👍</span>
-                          </div>
-                          <span className="text-white font-semibold">34</span>
-                        </div>
-                        <div className="flex items-center space-x-2 bg-black/30 backdrop-blur-sm rounded-full px-3 py-1">
-                          <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center">
-                            <span className="text-black text-sm font-bold">💬</span>
-                          </div>
-                          <span className="text-white font-semibold">15</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="absolute top-4 right-4">
-                      <div className="w-8 h-8 bg-black/30 backdrop-blur-sm rounded-full flex items-center justify-center">
-                        <span className="text-white text-lg">📍</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Card 2 - Secondary card */}
-                <div className="absolute top-20 right-0 w-64 h-48 bg-gradient-to-br from-green-500 to-green-700 rounded-2xl overflow-hidden shadow-xl transform -rotate-2 hover:rotate-0 transition-transform duration-300">
-                  <div className="relative w-full h-full">
-                    <img
-                      src={hole3}
-                      alt="Golf Experience"
-                      className="w-full h-full object-cover"
-                    />
-                    <div className="absolute inset-0 bg-black/20"></div>
-                    <div className="absolute bottom-4 left-4 right-4">
-                      <div className="flex items-center space-x-2 bg-black/30 backdrop-blur-sm rounded-full px-3 py-1 w-fit">
-                        <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center">
-                          <span className="text-black text-sm font-bold">💬</span>
-                        </div>
-                        <span className="text-white font-semibold">12</span>
-                      </div>
-                    </div>
-                    <div className="absolute top-4 right-4">
-                      <div className="w-8 h-8 bg-black/30 backdrop-blur-sm rounded-full flex items-center justify-center">
-                        <span className="text-white text-lg">📍</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Floating elements */}
-                <div className="absolute top-12 left-4 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center transform hover:scale-110 transition-transform duration-200">
-                  <span className="text-2xl">⛳</span>
-                </div>
+              {/* Map Image */}
+              <div className="relative rounded-2xl overflow-hidden">
+                <img
+                  src={golfMapImg}
+                  alt="Golf Course Map"
+                  className="w-full h-auto"
+                />
               </div>
             </div>
           </div>
         </div>
       </div>
-        </div>
-      </div>
+
+      
+       </div>
+    </div>
 
     {/* Timeline Section with Scroll Animation */}
     <div className="w-full min-h-screen">
@@ -532,9 +504,10 @@ const TheCourse = () => {
     </div>
 
     {/* Golf Course Aesthetic Section */}
-    <div className="relative z-50 bg-white min-h-screen rounded-t-[24px]">
+    <div className="relative z-50 bg-white min-h-screen">
       <GolfCourseAesthetic />
     </div>
+
     </div>
   );
 };
