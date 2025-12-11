@@ -6,12 +6,12 @@ import sampleImg from '../assets/img/hole6.webp'
 const NewsCard = ({ item, buttonProps = {} }) => {
 	const { date, title, excerpt, image } = item
 	return (
-		<article className="bg-white rounded-[24px] shadow-lg overflow-hidden max-w-[360px]">
-			<div className="h-[200px] w-full bg-cover bg-center" style={{ backgroundImage: `url(${image})` }} />
-			<div className="p-6">
-				<div className="text-[10px] text-gray-500 mb-4">{date}</div>
-				<h3 className="text-[20px] font-optima text-[#0F3563] mb-4 line-clamp-2 leading-snug min-h-[50px]">{title}</h3>
-				<p className="text-[12px] text-gray-600 mb-6 line-clamp-2">{excerpt}</p>
+		<article className="bg-white  rounded-[16px] sm:rounded-[18px] md:rounded-[20px] lg:rounded-[24px] flex md:flex-col shadow-lg overflow-hidden w-full max-w-none h-auto md:h-auto">
+			<div className="h-full md:h-[150px] lg:h-[220px] xl:h-[240px] w-[160px] sm:w-[180px] md:w-full bg-cover bg-center flex-shrink-0 min-h-[120px]" style={{ backgroundImage: `url(${image})` }} />
+			<div className="p-3 sm:p-4 md:p-5 lg:p-6">
+				<div className="text-[9px] sm:text-[10px] md:text-[11px] text-gray-500 mb-2 sm:mb-3 md:mb-4">{date}</div>
+				<h3 className="text-[14px] sm:text-[15px] md:text-[13px] lg:text-[15px] xl:text-[16px] font-optima text-[#0F3563] mb-3 sm:mb-4 line-clamp-2 leading-snug min-h-[35px] sm:min-h-[40px] md:min-h-[38px]">{title}</h3>
+				<p className="text-[10px] sm:text-[11px] md:text-[12px] text-gray-600 mb-4 sm:mb-5 md:mb-6 line-clamp-2 leading-relaxed">{excerpt}</p>
 				<div>
 					<Button
 						label={buttonProps.label ?? 'Read More'}
@@ -19,7 +19,8 @@ const NewsCard = ({ item, buttonProps = {} }) => {
 						textClass={buttonProps.textClass ?? 'text-[#E4E9D4]'}
 						iconClass={buttonProps.iconClass ?? 'text-[#E4E9D4]'}
 						secondWordClass={buttonProps.secondWordClass ?? 'font-optima'}
-						className={buttonProps.className ?? ''}
+						className={`text-[10px] sm:text-[11px] md:text-[10px] lg:text-[11px] xl:text-[12px] px-3 sm:px-4 md:px-4 lg:px-5 py-1.5 sm:py-2 ${buttonProps.className ?? ''}`}
+						iconSize={14}
 						onClick={buttonProps.onClick}
 					/>
 				</div>
@@ -92,9 +93,9 @@ const NewsCards = ({ count = 3, customData = null }) => {
 		.slice(0, Math.max(0, count))
 
 	return (
-		<section className="py-10">
-			<div className="container mx-auto">
-				<div className="grid grid-cols-1 md:grid-cols-3 gap-20">
+		<section className="py-6 sm:py-8 md:py-10">
+			<div className="container mx-auto px-2 sm:px-3 md:px-4">
+				<div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6 lg:gap-8 xl:gap-20">
 					{sorted.map(item => (
 						<NewsCard key={item.id} item={item} buttonProps={{ label: 'Read More' }} />
 					))}

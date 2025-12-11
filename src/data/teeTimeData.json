@@ -1,0 +1,149 @@
+{
+  "availableSlots": [
+    {
+      "date": "2025-12-15",
+      "timeSlots": [
+        { "time": "07:00", "available": true, "maxGolfers": 4 },
+        { "time": "07:30", "available": false, "maxGolfers": 4 },
+        { "time": "08:00", "available": true, "maxGolfers": 4 },
+        { "time": "08:30", "available": true, "maxGolfers": 4 },
+        { "time": "09:00", "available": false, "maxGolfers": 4 },
+        { "time": "09:30", "available": true, "maxGolfers": 4 },
+        { "time": "10:00", "available": true, "maxGolfers": 4 },
+        { "time": "10:30", "available": true, "maxGolfers": 4 },
+        { "time": "11:00", "available": false, "maxGolfers": 4 },
+        { "time": "11:30", "available": true, "maxGolfers": 4 },
+        { "time": "12:00", "available": true, "maxGolfers": 4 },
+        { "time": "12:30", "available": true, "maxGolfers": 4 },
+        { "time": "13:00", "available": false, "maxGolfers": 4 },
+        { "time": "13:30", "available": true, "maxGolfers": 4 },
+        { "time": "13:40", "available": true, "maxGolfers": 4 },
+        { "time": "14:00", "available": true, "maxGolfers": 4 },
+        { "time": "14:30", "available": false, "maxGolfers": 4 },
+        { "time": "15:00", "available": true, "maxGolfers": 4 },
+        { "time": "15:30", "available": true, "maxGolfers": 4 },
+        { "time": "16:00", "available": true, "maxGolfers": 4 }
+      ]
+    },
+    {
+      "date": "2025-12-11",
+      "timeSlots": [
+        { "time": "07:00", "available": false, "maxGolfers": 4 },
+        { "time": "07:30", "available": true, "maxGolfers": 4 },
+        { "time": "08:00", "available": true, "maxGolfers": 4 },
+        { "time": "08:30", "available": false, "maxGolfers": 4 },
+        { "time": "09:00", "available": true, "maxGolfers": 4 },
+        { "time": "09:30", "available": true, "maxGolfers": 4 },
+        { "time": "10:00", "available": false, "maxGolfers": 4 },
+        { "time": "10:30", "available": true, "maxGolfers": 4 },
+        { "time": "11:00", "available": true, "maxGolfers": 4 },
+        { "time": "11:30", "available": true, "maxGolfers": 4 },
+        { "time": "12:00", "available": false, "maxGolfers": 4 },
+        { "time": "12:30", "available": true, "maxGolfers": 4 },
+        { "time": "13:00", "available": true, "maxGolfers": 4 },
+        { "time": "13:30", "available": false, "maxGolfers": 4 },
+        { "time": "14:00", "available": true, "maxGolfers": 4 },
+        { "time": "14:30", "available": true, "maxGolfers": 4 },
+        { "time": "15:00", "available": true, "maxGolfers": 4 },
+        { "time": "15:30", "available": false, "maxGolfers": 4 },
+        { "time": "16:00", "available": true, "maxGolfers": 4 }
+      ]
+    },
+    {
+      "date": "2024-11-26",
+      "timeSlots": [
+        { "time": "07:00", "available": true, "maxGolfers": 4 },
+        { "time": "07:30", "available": true, "maxGolfers": 4 },
+        { "time": "08:00", "available": false, "maxGolfers": 4 },
+        { "time": "08:30", "available": true, "maxGolfers": 4 },
+        { "time": "09:00", "available": true, "maxGolfers": 4 },
+        { "time": "09:30", "available": false, "maxGolfers": 4 },
+        { "time": "10:00", "available": true, "maxGolfers": 4 },
+        { "time": "10:30", "available": true, "maxGolfers": 4 },
+        { "time": "11:00", "available": true, "maxGolfers": 4 },
+        { "time": "11:30", "available": false, "maxGolfers": 4 },
+        { "time": "12:00", "available": true, "maxGolfers": 4 },
+        { "time": "12:30", "available": true, "maxGolfers": 4 },
+        { "time": "13:00", "available": true, "maxGolfers": 4 },
+        { "time": "13:30", "available": true, "maxGolfers": 4 },
+        { "time": "14:00", "available": false, "maxGolfers": 4 },
+        { "time": "14:30", "available": true, "maxGolfers": 4 },
+        { "time": "15:00", "available": true, "maxGolfers": 4 },
+        { "time": "15:30", "available": true, "maxGolfers": 4 },
+        { "time": "16:00", "available": false, "maxGolfers": 4 }
+      ]
+    },
+    {
+      "date": "2024-11-27",
+      "timeSlots": [
+        { "time": "07:00", "available": false, "maxGolfers": 4 },
+        { "time": "07:30", "available": false, "maxGolfers": 4 },
+        { "time": "08:00", "available": true, "maxGolfers": 4 },
+        { "time": "08:30", "available": true, "maxGolfers": 4 },
+        { "time": "09:00", "available": false, "maxGolfers": 4 },
+        { "time": "09:30", "available": true, "maxGolfers": 4 },
+        { "time": "10:00", "available": true, "maxGolfers": 4 },
+        { "time": "10:30", "available": false, "maxGolfers": 4 },
+        { "time": "11:00", "available": true, "maxGolfers": 4 },
+        { "time": "11:30", "available": true, "maxGolfers": 4 },
+        { "time": "12:00", "available": true, "maxGolfers": 4 },
+        { "time": "12:30", "available": false, "maxGolfers": 4 },
+        { "time": "13:00", "available": true, "maxGolfers": 4 },
+        { "time": "13:30", "available": true, "maxGolfers": 4 },
+        { "time": "14:00", "available": true, "maxGolfers": 4 },
+        { "time": "14:30", "available": false, "maxGolfers": 4 },
+        { "time": "15:00", "available": false, "maxGolfers": 4 },
+        { "time": "15:30", "available": true, "maxGolfers": 4 },
+        { "time": "16:00", "available": true, "maxGolfers": 4 }
+      ]
+    },
+    {
+      "date": "2024-11-28",
+      "timeSlots": [
+        { "time": "07:00", "available": true, "maxGolfers": 4 },
+        { "time": "07:30", "available": true, "maxGolfers": 4 },
+        { "time": "08:00", "available": true, "maxGolfers": 4 },
+        { "time": "08:30", "available": false, "maxGolfers": 4 },
+        { "time": "09:00", "available": true, "maxGolfers": 4 },
+        { "time": "09:30", "available": true, "maxGolfers": 4 },
+        { "time": "10:00", "available": false, "maxGolfers": 4 },
+        { "time": "10:30", "available": true, "maxGolfers": 4 },
+        { "time": "11:00", "available": true, "maxGolfers": 4 },
+        { "time": "11:30", "available": true, "maxGolfers": 4 },
+        { "time": "12:00", "available": false, "maxGolfers": 4 },
+        { "time": "12:30", "available": true, "maxGolfers": 4 },
+        { "time": "13:00", "available": true, "maxGolfers": 4 },
+        { "time": "13:30", "available": true, "maxGolfers": 4 },
+        { "time": "14:00", "available": true, "maxGolfers": 4 },
+        { "time": "14:30", "available": true, "maxGolfers": 4 },
+        { "time": "15:00", "available": true, "maxGolfers": 4 },
+        { "time": "15:30", "available": false, "maxGolfers": 4 },
+        { "time": "16:00", "available": true, "maxGolfers": 4 }
+      ]
+    },
+    {
+      "date": "2024-12-01",
+      "timeSlots": [
+        { "time": "07:00", "available": true, "maxGolfers": 4 },
+        { "time": "07:30", "available": false, "maxGolfers": 4 },
+        { "time": "08:00", "available": true, "maxGolfers": 4 },
+        { "time": "08:30", "available": true, "maxGolfers": 4 },
+        { "time": "09:00", "available": true, "maxGolfers": 4 },
+        { "time": "09:30", "available": false, "maxGolfers": 4 },
+        { "time": "10:00", "available": true, "maxGolfers": 4 },
+        { "time": "10:30", "available": true, "maxGolfers": 4 },
+        { "time": "11:00", "available": true, "maxGolfers": 4 },
+        { "time": "11:30", "available": true, "maxGolfers": 4 },
+        { "time": "12:00", "available": false, "maxGolfers": 4 },
+        { "time": "12:30", "available": true, "maxGolfers": 4 },
+        { "time": "13:00", "available": true, "maxGolfers": 4 },
+        { "time": "13:30", "available": true, "maxGolfers": 4 },
+        { "time": "14:00", "available": false, "maxGolfers": 4 },
+        { "time": "14:30", "available": true, "maxGolfers": 4 },
+        { "time": "15:00", "available": true, "maxGolfers": 4 },
+        { "time": "15:30", "available": true, "maxGolfers": 4 },
+        { "time": "16:00", "available": true, "maxGolfers": 4 }
+      ]
+    }
+  ]
+}

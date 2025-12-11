@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Logo from "../assets/img/shgc-logo.png";
 import Button from "./Button";
+import ContactPopup from "./ContactPopup";
 import enFlag from "../assets/img/en.png";
 import jpnFlag from "../assets/img/jpn.webp";
 import koreaFlag from "../assets/img/korea.webp";
@@ -12,6 +13,7 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
   const [showContent, setShowContent] = useState(false);
+  const [isContactPopupOpen, setIsContactPopupOpen] = useState(false);
   const [currentLanguage, setCurrentLanguage] = useState({ code: "en", image: enFlag, name: "English" });
 
   const languages = [
@@ -25,6 +27,15 @@ const Navbar = () => {
     setIsLanguageOpen(false);
     // TODO: Implement language switching logic here
     console.log("Language changed to:", language.name);
+  };
+
+  const handleContactClick = () => {
+    setIsContactPopupOpen(true);
+    setIsMobileMenuOpen(false); // Close mobile menu if open
+  };
+
+  const closeContactPopup = () => {
+    setIsContactPopupOpen(false);
   };
 
   const toggleMobileMenu = () => {
@@ -62,6 +73,7 @@ const Navbar = () => {
   }, []);
 
   return (
+    <>
     <nav className={`fixed left-0 right-0 z-50 transition-all duration-300 ease-in-out ${
       isScrolled ? 'top-2' : 'top-0'
     }`}>
@@ -100,18 +112,18 @@ const Navbar = () => {
               <Link to="/the-course" className="relative overflow-hidden font-medium whitespace-nowrap text-[11px] md:text-[12px] lg:text-[13px] xl:text-[14px] 2xl:text-[15px] py-1 md:py-2 px-1 md:px-2 lg:px-3 xl:px-4 group">
                 <span className="bg-gradient-to-r from-gray-800 to-gray-800 bg-clip-text text-transparent group-hover:from-gray-800 group-hover:via-[#A4781A] group-hover:to-gray-800 transition-all duration-700 ease-out bg-[length:200%_100%] bg-left group-hover:bg-right">The Course</span>
               </Link>
-              <a href="/#news" className="relative overflow-hidden font-medium whitespace-nowrap text-[11px] md:text-[12px] lg:text-[13px] xl:text-[14px] 2xl:text-[15px] py-1 md:py-2 px-1 md:px-2 lg:px-3 xl:px-4 group">
+              <a href="/news-event" className="relative overflow-hidden font-medium whitespace-nowrap text-[11px] md:text-[12px] lg:text-[13px] xl:text-[14px] 2xl:text-[15px] py-1 md:py-2 px-1 md:px-2 lg:px-3 xl:px-4 group">
                 <span className="bg-gradient-to-r from-gray-800 to-gray-800 bg-clip-text text-transparent group-hover:from-gray-800 group-hover:via-[#A4781A] group-hover:to-gray-800 transition-all duration-700 ease-out bg-[length:200%_100%] bg-left group-hover:bg-right">News & Events</span>
               </a>
-              <a href="/#membership" className="relative overflow-hidden font-medium whitespace-nowrap text-[11px] md:text-[12px] lg:text-[13px] xl:text-[14px] 2xl:text-[15px] py-1 md:py-2 px-1 md:px-2 lg:px-3 xl:px-4 group">
+              <a href="/membership" className="relative overflow-hidden font-medium whitespace-nowrap text-[11px] md:text-[12px] lg:text-[13px] xl:text-[14px] 2xl:text-[15px] py-1 md:py-2 px-1 md:px-2 lg:px-3 xl:px-4 group">
                 <span className="bg-gradient-to-r from-gray-800 to-gray-800 bg-clip-text text-transparent group-hover:from-gray-800 group-hover:via-[#A4781A] group-hover:to-gray-800 transition-all duration-700 ease-out bg-[length:200%_100%] bg-left group-hover:bg-right">Membership</span>
               </a>
               <Link to="/faq" className="relative overflow-hidden font-medium whitespace-nowrap text-[11px] md:text-[12px] lg:text-[13px] xl:text-[14px] 2xl:text-[15px] py-1 md:py-2 px-1 md:px-2 lg:px-3 xl:px-4 group">
                 <span className="bg-gradient-to-r from-gray-800 to-gray-800 bg-clip-text text-transparent group-hover:from-gray-800 group-hover:via-[#A4781A] group-hover:to-gray-800 transition-all duration-700 ease-out bg-[length:200%_100%] bg-left group-hover:bg-right">FAQ</span>
               </Link>
-              <a href="/#contact" className="relative overflow-hidden font-medium whitespace-nowrap text-[11px] md:text-[12px] lg:text-[13px] xl:text-[14px] 2xl:text-[15px] py-1 md:py-2 px-1 md:px-2 lg:px-3 xl:px-4 group">
+              <button onClick={handleContactClick} className="relative overflow-hidden font-medium whitespace-nowrap text-[11px] md:text-[12px] lg:text-[13px] xl:text-[14px] 2xl:text-[15px] py-1 md:py-2 px-1 md:px-2 lg:px-3 xl:px-4 group">
                 <span className="bg-gradient-to-r from-gray-800 to-gray-800 bg-clip-text text-transparent group-hover:from-gray-800 group-hover:via-[#A4781A] group-hover:to-gray-800 transition-all duration-700 ease-out bg-[length:200%_100%] bg-left group-hover:bg-right">Contact</span>
-              </a>
+              </button>
             </div>
             
             {/* Right Side - Button & Language */}
@@ -127,7 +139,7 @@ const Navbar = () => {
                   iconClass="hidden"
                   secondWordClass="font-inter"
                   onClick={() => {
-                    window.location.href = "/booking";
+                    window.location.href = "/book-tee-time";
                   }}
                 />
               </div>
@@ -231,64 +243,63 @@ const Navbar = () => {
               <div className="flex-1 flex">
                 {/* Left Side - Menu Items */}
                 <div className="flex-1 p-6 space-y-1">
-                  <h3 className="text-lg font-semibold text-gray-800 mb-4 font-optima">Navigation</h3>
+                  <h3 className="text-sm sm:text-lg font-semibold text-gray-800 mb-4 font-optima">Navigation</h3>
                   
                   <Link 
                     to="/" 
-                    className="block text-gray-700 hover:text-[#A4781A] font-medium transition-all duration-300 py-3 px-4 rounded-xl hover:bg-gray-50 text-lg"
+                    className="block text-gray-700 hover:text-[#A4781A] font-medium transition-all duration-300 py-3 px-4 rounded-xl hover:bg-gray-50 text-sm sm:text-lg"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     Home
                   </Link>
                   <Link 
                     to="/facilities" 
-                    className="block text-gray-700 hover:text-[#A4781A] font-medium transition-all duration-300 py-3 px-4 rounded-xl hover:bg-gray-50 text-lg"
+                    className="block text-gray-700 hover:text-[#A4781A] font-medium transition-all duration-300 py-3 px-4 rounded-xl hover:bg-gray-50 text-sm sm:text-lg"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     Facilities
                   </Link>
                   <Link 
                     to="/the-course" 
-                    className="block text-gray-700 hover:text-[#A4781A] font-medium transition-all duration-300 py-3 px-4 rounded-xl hover:bg-gray-50 text-lg"
+                    className="block text-gray-700 hover:text-[#A4781A] font-medium transition-all duration-300 py-3 px-4 rounded-xl hover:bg-gray-50 text-sm sm:text-lg"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     The Course
                   </Link>
                   <a 
-                    href="/#news" 
-                    className="block text-gray-700 hover:text-[#A4781A] font-medium transition-all duration-300 py-3 px-4 rounded-xl hover:bg-gray-50 text-lg"
+                    href="/news-event" 
+                    className="block text-gray-700 hover:text-[#A4781A] font-medium transition-all duration-300 py-3 px-4 rounded-xl hover:bg-gray-50 text-sm sm:text-lg"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     News & Events
                   </a>
                   <a 
-                    href="/#membership" 
-                    className="block text-gray-700 hover:text-[#A4781A] font-medium transition-all duration-300 py-3 px-4 rounded-xl hover:bg-gray-50 text-lg"
+                    href="/membership" 
+                    className="block text-gray-700 hover:text-[#A4781A] font-medium transition-all duration-300 py-3 px-4 rounded-xl hover:bg-gray-50 text-sm sm:text-lg"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     Membership
                   </a>
                   <Link 
                     to="/faq" 
-                    className="block text-gray-700 hover:text-[#A4781A] font-medium transition-all duration-300 py-3 px-4 rounded-xl hover:bg-gray-50 text-lg"
+                    className="block text-gray-700 hover:text-[#A4781A] font-medium transition-all duration-300 py-3 px-4 rounded-xl hover:bg-gray-50 text-sm sm:text-lg"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     FAQ
                   </Link>
-                  <a 
-                    href="/#contact" 
-                    className="block text-gray-700 hover:text-[#A4781A] font-medium transition-all duration-300 py-3 px-4 rounded-xl hover:bg-gray-50 text-lg"
-                    onClick={() => setIsMobileMenuOpen(false)}
+                  <button 
+                    onClick={handleContactClick}
+                    className="block text-gray-700 hover:text-[#A4781A] font-medium transition-all duration-300 py-3 px-4 rounded-xl hover:bg-gray-50 text-sm sm:text-lg w-full text-left"
                   >
                     Contact
-                  </a>
+                  </button>
                 </div>
 
                 {/* Right Side - Description & CTA */}
                 <div className="w-48 bg-gradient-to-br from-gray-50 to-gray-100 p-6 flex flex-col justify-between">
                   <div>
-                    <h4 className="text-lg font-semibold text-gray-800 mb-3 font-optima">Welcome to SHGC</h4>
-                    <p className="text-sm text-gray-600 leading-relaxed mb-4">
+                    <h4 className="text-sm sm:text-lg font-semibold text-gray-800 mb-3 font-optima">Welcome to SHGC</h4>
+                    <p className="text-xs sm:text-sm text-gray-600 leading-relaxed mb-4">
                       Experience premium golf at Singapore Handicapped Golf Club. Join our exclusive community today.
                     </p>
                     <div className="space-y-3">
@@ -300,7 +311,7 @@ const Navbar = () => {
                         iconClass="hidden"
                         secondWordClass="font-inter"
                         onClick={() => {
-                          window.location.href = "/booking";
+                          window.location.href = "/book-tee-time";
                           setIsMobileMenuOpen(false);
                         }}
                       />
@@ -312,7 +323,7 @@ const Navbar = () => {
                         iconClass=""
                         secondWordClass="font-inter"
                         onClick={() => {
-                          window.location.href = "/booking";
+                          window.location.href = "/membership";
                           setIsMobileMenuOpen(false);
                         }}
                       />
@@ -359,6 +370,13 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
+    
+    {/* Contact Popup */}
+    <ContactPopup 
+      isOpen={isContactPopupOpen} 
+      onClose={closeContactPopup} 
+    />
+    </>
   );
 };
 
