@@ -7,6 +7,8 @@ import TheCourse2 from "./Pages/TheCourse2";
 import Facilities from "./Pages/Facilities";
 import FraserDrivingLounge from "./Pages/FraserDrivining&Lounge";
 import Faq from "./Pages/Faq";
+import VIPRoom from "./Pages/VIPRoom";
+import VIPRoomDetails from "./Pages/VIPRoomDetails";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
         <Route path="/facilities" element={<Facilities />} />
         <Route path="/fraser-driving-lounge" element={<FraserDrivingLounge />} />
         <Route path="/faq" element={<Faq />} />
+        <Route path="/vip-room" element={<VIPRoom />} />
+        <Route path="/vip-room-details" element={<VIPRoomDetails />} />
       </Routes>
       <Footer />
     </Router>
