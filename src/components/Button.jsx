@@ -33,7 +33,7 @@ const Button = ({
   return (
     <button
       onClick={onClick}
-      className={`flex items-center gap-3 px-5 py-2 transition-all duration-200 w-fit ${bgClass} ${textClass} ${roundedClass} ${className}`}
+      className={`flex items-center gap-2 sm:gap-3 px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] transition-all duration-200 w-fit ${bgClass} ${textClass} ${roundedClass} ${className}`}
       style={style}
       {...rest}
     >
@@ -56,7 +56,11 @@ const Button = ({
         <span className="font-light">{label ?? children}</span>
       )}
       {showIcon && Icon && (
-        <Icon className={`${iconClass}`} size={iconSize} aria-hidden="true" />
+        <Icon 
+          className={`${iconClass}`} 
+          size={iconSize || (typeof window !== 'undefined' && window.innerWidth < 640 ? 16 : window.innerWidth < 768 ? 18 : 20)} 
+          aria-hidden="true" 
+        />
       )}
     </button>
   );

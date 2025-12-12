@@ -1,0 +1,164 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "type": "news",
+      "date": "08 December 2025",
+      "title": "SIGNATURE HOLE OF SENTUL HIGHLANDS GOLF CLUB",
+      "excerpt": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+      "content": [
+        "Sentul Highlands Golf Club proudly presents its signature hole, the stunning par-4 16th hole that has become the crown jewel of our championship course. This magnificent hole offers breathtaking views of the surrounding mountains while challenging golfers of all skill levels.",
+        "Designed by renowned golf course architect Peter Thomson, the signature hole features strategic bunkers, undulating greens, and a challenging water hazard that comes into play on the approach shot. The elevated tee box provides panoramic views of the entire valley, making it a favorite spot for photography and contemplation.",
+        "Recent improvements to the hole include enhanced drainage systems, upgraded cart paths, and new landscaping that maintains the natural beauty while improving playability. The maintenance team has worked tirelessly to ensure perfect playing conditions year-round.",
+        "Members and guests consistently rate this hole as one of the most memorable in Indonesia. The combination of natural beauty, strategic design, and impeccable maintenance makes it a true test of golf while providing an unforgettable experience for players of all abilities."
+      ],
+      "image": "/src/assets/img/hole6.webp",
+      "createdAt": "2025-12-08",
+      "category": "Course Updates"
+    },
+    {
+      "id": 2,
+      "type": "event",
+      "date": "15 December 2025",
+      "title": "ANNUAL GOLF TOURNAMENT 2025",
+      "excerpt": "Join us for the biggest golf tournament of the year. Registration now open for all members and non-members.",
+      "content": [
+        "The Annual Golf Tournament 2025 promises to be the most exciting championship event in Sentul Highlands Golf Club's history. This prestigious tournament attracts golfers from across Indonesia and Southeast Asia, competing for the coveted championship trophy and substantial prize purse.",
+        "Registration is now open for all skill categories including Championship Flight, Senior Division, Ladies Division, and Junior Tournament. Entry fees include green fees, cart rental, tournament gift bag, welcome dinner, and awards ceremony. Early bird registration discounts are available until December 10th.",
+        "The tournament will feature a 72-hole stroke play format over three days, with the final round being played on our championship course. Professional caddies will be available, and live scoring will be provided throughout the event. Spectators are welcome and admission is complimentary.",
+        "Special accommodations have been arranged with nearby hotels for out-of-town participants. The tournament concludes with an elegant awards ceremony and gala dinner featuring live entertainment and recognition of winners in all divisions. Don't miss this premier golfing event!"
+      ],
+      "image": "/src/assets/img/hole6.webp",
+      "createdAt": "2025-12-07",
+      "category": "Tournament"
+    },
+    {
+      "id": 3,
+      "type": "news",
+      "date": "05 December 2025",
+      "title": "FRASER DRIVING & LOUNGE RENOVATION",
+      "excerpt": "Fraser Driving & Lounge is undergoing renovation to provide better facilities and dining experience for our members.",
+      "content": [
+        "Fraser Driving & Lounge, one of Sentul Highlands Golf Club's most popular dining venues, is currently undergoing a comprehensive renovation to enhance the dining experience for our valued members and guests. The renovation project began on December 1st and is expected to be completed by February 2026.",
+        "The renovation includes a complete kitchen modernization with state-of-the-art equipment, expanded seating capacity, and a redesigned interior featuring contemporary Indonesian design elements. The new layout will provide better views of the golf course while maintaining the intimate atmosphere that members love.",
+        "During the renovation period, alternative dining options are available at the Main Clubhouse Restaurant and the Terrace Café. We sincerely apologize for any inconvenience and appreciate our members' patience during this improvement period. Temporary dining arrangements have been made to ensure minimal disruption to member services.",
+        "The renovated Fraser Driving & Lounge will feature an expanded menu highlighting both international cuisine and authentic Indonesian dishes, prepared by our award-winning culinary team. Advanced reservation systems and enhanced service standards will ensure an exceptional dining experience for all guests."
+      ],
+      "image": "/src/assets/img/hole6.webp",
+      "createdAt": "2025-12-05",
+      "category": "Facilities"
+    },
+    {
+      "id": 4,
+      "type": "event",
+      "date": "20 December 2025",
+      "title": "CHRISTMAS GALA DINNER",
+      "excerpt": "Celebrate Christmas with us at the clubhouse. Special dinner menu and entertainment program for the whole family.",
+      "content": [
+        "Join us for an unforgettable Christmas Gala Dinner at the Main Clubhouse on December 20th, 2025. This magical evening promises to be the highlight of the holiday season, featuring exquisite dining, live entertainment, and festive celebrations for the entire family.",
+        "Our executive chef has crafted a special Christmas menu featuring traditional holiday favorites alongside gourmet international dishes. The evening begins with a champagne reception at 6:00 PM, followed by a sumptuous four-course dinner showcasing the finest seasonal ingredients and culinary artistry.",
+        "Entertainment for the evening includes live jazz performances by renowned Indonesian musicians, a special Christmas choir presentation, and surprise appearances by Santa Claus for the children. Professional photographers will capture memorable moments throughout the evening, with complimentary photo sessions available for families.",
+        "Advance reservations are required with limited seating available. Member rates apply with special pricing for children under 12. Elegant attire is requested for this sophisticated celebration. Contact the Member Services team to secure your table for this spectacular Christmas celebration that promises to create lasting holiday memories."
+      ],
+      "image": "/src/assets/img/hole6.webp",
+      "createdAt": "2025-12-04",
+      "category": "Social Events"
+    },
+    {
+      "id": 5,
+      "type": "news",
+      "date": "02 December 2025",
+      "title": "NEW PRO SHOP COLLECTION ARRIVES",
+      "excerpt": "Check out the latest golf equipment and apparel collection now available at our Pro Shop with special member discounts.",
+      "content": [
+        "The Pro Shop at Sentul Highlands Golf Club has just received an exciting new collection of premium golf equipment and apparel from leading brands including Titleist, Callaway, TaylorMade, and Nike Golf. This extensive collection features the latest innovations in golf technology and fashion.",
+        "The equipment selection includes the newest driver models with advanced aerodynamic designs, precision-engineered iron sets, and state-of-the-art putters. Our professional fitting services are available to ensure optimal performance for golfers of all skill levels. Custom club fitting appointments can be scheduled with our PGA-certified professionals.",
+        "The apparel collection showcases the latest in golf fashion, featuring moisture-wicking fabrics, UV protection, and contemporary designs suitable for both on-course performance and casual wear. The collection includes options for men, women, and junior golfers, with a range of sizes and styles to suit every preference.",
+        "Members enjoy exclusive discounts of up to 20% on all new arrivals throughout December. Our knowledgeable Pro Shop staff is available to provide expert advice on equipment selection and sizing. Visit the Pro Shop today to explore these exciting new additions and take advantage of special member pricing."
+      ],
+      "image": "/src/assets/img/hole6.webp",
+      "createdAt": "2025-12-02",
+      "category": "Pro Shop"
+    },
+    {
+      "id": 6,
+      "type": "event",
+      "date": "10 January 2026",
+      "title": "JUNIOR GOLF CLINIC",
+      "excerpt": "Special golf clinic for young golfers aged 8-16. Learn from our professional instructors in a fun and safe environment.",
+      "content": [
+        "Sentul Highlands Golf Club is excited to announce our upcoming Junior Golf Clinic scheduled for January 10th, 2026. This comprehensive program is designed specifically for young golfers aged 8-16 who are eager to learn the fundamentals of golf in a fun, safe, and supportive environment.",
+        "Led by our team of PGA-certified instructors, the clinic will cover all aspects of the game including proper grip, stance, swing mechanics, putting techniques, and course etiquette. Each session is carefully structured to accommodate different skill levels, ensuring that both beginners and more experienced junior golfers benefit from age-appropriate instruction.",
+        "The clinic features small group sizes to maximize individual attention, with a maximum of 8 participants per instructor. All necessary equipment will be provided, including junior-sized clubs, balls, and tees. Parents are welcome to observe the sessions and will receive progress reports and recommendations for continued development.",
+        "Registration includes a welcome kit with junior golf accessories, healthy snacks, and a certificate of participation. The program runs from 9:00 AM to 3:00 PM with lunch provided. Early registration discounts are available for club members. This clinic is an excellent opportunity for young golfers to develop their skills while making new friends who share their passion for the game."
+      ],
+      "image": "/src/assets/img/hole6.webp",
+      "createdAt": "2025-12-01",
+      "category": "Training"
+    },
+    {
+      "id": 7,
+      "type": "news",
+      "date": "30 November 2025",
+      "title": "COURSE MAINTENANCE SCHEDULE",
+      "excerpt": "Planned maintenance work on holes 5, 12, and 16 to improve playing conditions. Temporary alternative routes available.",
+      "content": [
+        "Sentul Highlands Golf Club is committed to maintaining the highest standards of course conditions for our members and guests. To ensure optimal playing surfaces, we have scheduled essential maintenance work on holes 5, 12, and 16 beginning Monday, December 2nd, 2025.",
+        "The maintenance program includes aerification of greens and tees, installation of improved drainage systems, and renovation of select bunkers. These improvements are designed to enhance playability during the rainy season and maintain our championship course standards year-round. The work is expected to be completed by December 20th, weather permitting.",
+        "During the maintenance period, temporary alternative routes and pin placements will be available to minimize disruption to member play. Course marshals will be stationed at affected holes to assist players with alternative routing. We recommend checking with the Pro Shop for daily course conditions and any specific playing recommendations.",
+        "We sincerely appreciate our members' patience and understanding during this improvement period. The enhanced drainage and turf conditions will significantly improve the playing experience for years to come. Reduced green fees will be offered during the maintenance period as compensation for any inconvenience."
+      ],
+      "image": "/src/assets/img/hole6.webp",
+      "createdAt": "2025-11-30",
+      "category": "Course Updates"
+    },
+    {
+      "id": 8,
+      "type": "event",
+      "date": "05 February 2026",
+      "title": "VALENTINE'S COUPLES TOURNAMENT",
+      "excerpt": "Special couples tournament for Valentine's Day. Prizes for best dressed couple and tournament winners.",
+      "content": [
+        "Celebrate love and golf at our special Valentine's Couples Tournament on February 5th, 2026. This unique event combines competitive golf with romantic celebration, creating an unforgettable experience for couples who share a passion for the game.",
+        "The tournament features a fun scramble format that encourages teamwork and allows couples of all skill levels to participate and enjoy the competition. Special Valentine's themed challenges and prizes will be incorporated throughout the course, adding excitement and romance to the traditional golf tournament format.",
+        "Prizes will be awarded for lowest score, longest drive (combined distance), closest to the pin, and the coveted 'Best Dressed Couple' award. Participants are encouraged to incorporate Valentine's colors and themes into their golf attire. Professional photography will be available to capture memorable moments throughout the day.",
+        "The tournament package includes green fees, cart rental, welcome refreshments, on-course snacks, and a romantic dinner for two at Fraser Dining & Lounge. The evening concludes with an awards ceremony and live music. Limited spaces available, so register early with your special someone for this celebration of love and golf."
+      ],
+      "image": "/src/assets/img/hole6.webp",
+      "createdAt": "2025-11-29",
+      "category": "Tournament"
+    },
+    {
+      "id": 9,
+      "type": "news",
+      "date": "28 November 2025",
+      "title": "NEW MEMBER BENEFITS PROGRAM",
+      "excerpt": "Introducing enhanced member benefits including priority booking, dining discounts, and exclusive access to member events.",
+      "content": [
+        "Sentul Highlands Golf Club is pleased to announce the launch of our enhanced Member Benefits Program, designed to provide even greater value and exclusive privileges for our valued members. This comprehensive program introduces new benefits while enhancing existing services to create an unparalleled membership experience.",
+        "Key benefits include priority tee time reservations up to 14 days in advance, complimentary guest privileges twice per month, and exclusive access to member-only events and tournaments. Dining benefits feature 15% discounts at all club restaurants, priority reservations for special events, and access to exclusive member dining experiences.",
+        "Additional perks include complimentary club storage, preferred parking, and reciprocal playing privileges at select partner golf clubs throughout Southeast Asia. Members also receive priority access to golf instruction with club professionals, equipment fitting services, and special rates on merchandise in the Pro Shop.",
+        "The program launches January 1st, 2026, with all current members automatically enrolled at no additional cost. New membership categories have also been introduced to accommodate different lifestyles and usage patterns. Contact Member Services for detailed information about all available benefits and how to maximize your membership value."
+      ],
+      "image": "/src/assets/img/hole6.webp",
+      "createdAt": "2025-11-28",
+      "category": "Membership"
+    },
+    {
+      "id": 10,
+      "type": "event",
+      "date": "18 January 2026",
+      "title": "LADIES NIGHT GOLF & DINNER",
+      "excerpt": "Special evening for our lady members with twilight golf session followed by dinner and networking.",
+      "content": [
+        "Join us for an elegant Ladies Night Golf & Dinner on January 18th, 2026, celebrating the achievements and camaraderie of our female members. This special evening combines twilight golf with sophisticated dining and networking opportunities in a relaxed and supportive environment.",
+        "The evening begins at 4:00 PM with a twilight nine-hole scramble format, allowing players of all skill levels to participate and enjoy the beautiful late afternoon lighting on our course. Professional instruction will be available for those interested in improving their game, with tips on course management and strategy.",
+        "Following golf, guests will enjoy cocktails on the terrace overlooking the 18th green, followed by a specially curated three-course dinner featuring seasonal ingredients and wine pairings. The evening includes guest speakers sharing insights on golf, business, and personal development, creating valuable networking opportunities.",
+        "Special pricing is available for lady members with guest rates for non-member friends. The event includes golf, cart rental, driving range access, cocktail reception, dinner, and networking activities. Dress code is smart casual for dinner. Register early as spaces are limited for this popular annual event that celebrates the growing community of women in golf."
+      ],
+      "image": "/src/assets/img/hole6.webp",
+      "createdAt": "2025-11-27",
+      "category": "Social Events"
+    }
+  ]
+}
